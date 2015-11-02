@@ -2,6 +2,11 @@
 
 /* GLOBAL STYLES */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* grid styles */
 .row, 
 .column {
@@ -76,6 +81,105 @@
 }
 
 
+/* HEADER STYLES */
+
+div.image {
+  background-image: url(../images/home/slideshow_1.jpg);
+}
+
+header {
+  background-image: url(../images/home/slideshow_1.jpg);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+header a img {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+ul.menu {
+/*  background-color: black;*/
+  padding-left: 30%;
+}
+
+ul.menu li {
+/*  background-color: black;*/
+  list-style: none;
+  font-size: 1.8em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+ul.menu li a {
+/*  background-color: black;*/
+  text-decoration: none;
+  font-size: 1.1em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+}
+
+ul.menu li a:hover {
+  color: rgb(235,117,65);
+  text-decoration: 5px solid rgb(235,225,195);
+}
+
+ul.menu li span i {
+  color: white;
+  font-size: 0.5em;
+}
+
+ul.menu li i {
+  color: white;
+  font-size: 0.8em;
+}
+
+ul.menu li.cart {  
+  background-color: rgb(235,225,195);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+ul.menu li.cart span {
+  color: rgb(48,48,48);
+  padding: 0 10px;
+}
+
+ul.menu li.cart i {
+  color: rgb(48,48,48);
+  padding: 0 5px;
+}
+
+.dropdown ul {
+/*  background-color: black;*/
+  display: none;
+  min-width: 200px;
+/*  position: absolute;*/
+  text-align: right;
+  z-index: 1000;
+}
+
+.dropdown ul li {
+/*  background-color: black;*/
+  list-style: none;
+  font-size: 1.5em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  display: inline-block;
+}
+
+.dropdown ul li a {
+/*  background-color: black;*/
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+}
 
 
 /* INDEX.HTML */
