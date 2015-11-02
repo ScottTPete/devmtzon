@@ -217,7 +217,7 @@ ul.menu li.cart i {
   text-transform: uppercase;
   border-top: 2px solid white;
   border-bottom: 2px solid white;  
-  width: 30%;
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
   position: absolute;
@@ -262,8 +262,8 @@ ul.menu li.cart i {
   background-color: rgb(235,117,65);
   color: #ffffff;
   opacity: .7;
-  height: 20px;
-  width: 80px;
+  height: 30px;
+  width: 90px;
   z-index: 999;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -271,16 +271,20 @@ ul.menu li.cart i {
   
 }
 
-#reviews {
-/*
-  position:fixed; 
-  right:0; 
-  top:50%;
-  background-color: rgb(235,117,65);
-*/
+#floating-button #review {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 0 10px;
+}
+
+#floating-button #review i {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+/*  padding-right: 10px;*/
 }
 
 .products {
@@ -332,8 +336,192 @@ ul.menu li.cart i {
 }
 
 
+#addl-content {
+  width: 100%;
+  color: rgb(48,48,48);
+}
 
+#news {
+  width: 50%;
+  float: left;
+/*  background-color: blue;*/
+}
 
+#news .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 20px 20px 80px;
+  padding: 10px 0;
+}
 
+.entry {
+  margin-left: 80px;
+  margin-bottom: 50px;
+  width: 80%;
+}
 
+.entry p {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.entry p.entry-title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 20px;
+  text-transform: uppercase;  
+  margin-bottom: 2px;
+}
+
+.entry p.date {
+  margin-bottom: 8px;
+  color: rgb(204,204,204);
+  font-size: 13px;
+}
+
+.entry p.content a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#twitter {
+  width: 50%;
+  float: left;
+}
+
+#twitter ul li {
+  list-style: none;
+}
+
+#twitter img {
+  width: 15px;
+  height: 15px;
+}
+
+#twitter .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 80px 20px 10px;
+  padding: 10px 0;
+}
+
+#footer1 {
+  clear: both;
+  background-color: rgb(249,247,243);
+}
+
+#footer1 ul {
+  float: left;
+}
+
+#footer1 ul .title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 25px;
+  border-top: 1px solid rgb(227,227,227);
+  border-bottom: 1px solid rgb(227,227,227);
+  margin: 0 80px 20px 10px;
+  padding: 10px 0;
+}
+
+#footer1 ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#footer1 ul li a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+#footer1 #signup {
+  width: 25%;
+}
+
+#signup input {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#signup button {
+  width: 80%;
+  padding: 10px 0;
+  border-radius: 5px;
+/*  border-bottom-style: outset;*/
+/*  border-top-style: outset;*/
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+/*
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+*/
+/*  border-top-color: rgb(235,117,65);*/
+  background-color: rgb(238,118,57);
+  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+}
+
+#signup p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(48,48,48);
+  text-transform: none;
+  width: 80%;
+  line-height: 25px;
+}
+#footer1 #healthbars {
+  width: 40%;
+}
+
+#footer1 #learn {
+  width: 25%;
+}
+
+footer {
+  clear: both;
+  background-color: rgb(237,233,221);
+}
+
+footer p {
+  float: left;
+}
+
+footer ul {
+  float: right;
+}
+footer ul li {
+  display: inline-block;
 }
