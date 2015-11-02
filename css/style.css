@@ -2,93 +2,33 @@
 
 /* GLOBAL STYLES */
 
+.clearfix {
+  overflow: auto;
+}
+
+.col-sm {
+  width: 33%;
+}
+
+.col-lg {
+  width: 66%;
+}
+
+
 body {
   margin: 0;
   padding: 0;
 }
 
-/* grid styles */
-.row, 
-.column {
-    box-sizing: border-box;
-}
-
-.row:before,
-.row:after {
-    content: " ";
-    display: table;
-}
-
-.row:after {
-    clear: both;
-}
-
-.column {
-    position: relative;
-    float: left;
-}
-
-.column + .column {
-    margin-left: 1.6%;
-}
-
-.column-1 {
-    width: 6.86666666667%;
-}
-
-.column-2 {
-    width: 15.3333333333%;
-}
-
-.column-3 {
-    width: 23.8%;
-}
-
-.column-4 {
-    width: 32.2666666667%;
-}
-
-.column-5 {
-    width: 40.7333333333%;
-}
-
-.column-6 {
-    width: 49.2%;
-}
-
-.column-7 {
-    width: 57.6666666667%;
-}
-
-.column-8 {
-    width: 66.1333333333%;
-}
-
-.column-9 {
-    width: 74.6%;
-}
-
-.column-10 {
-    width: 83.0666666667%;
-}
-
-.column-11 {
-    width: 91.5333333333%;
-}
-
-.column-12 {
-    width: 100%;
-}
 
 
 /* HEADER STYLES */
 
 div.image {
-  background-image: url(../images/home/slideshow_1.jpg);
+  background-image: url(../images/home/slideshow_2.jpg);
 }
 
 header {
-  background-image: url(../images/home/slideshow_1.jpg);
   width: 1333px;
   height: 625px;
   padding: 20px 40px;
@@ -240,10 +180,81 @@ ul.menu li.cart i {
 }
 
 
+.banner {
+  width: 100%;
+  background-color: rgb(237,233,221);
+}
+
+.banner div.container {
+  margin: 0 250px;
+}
+
+.banner img {
+  padding: 30px 0;
+  margin: 0 auto;
+}
 
 
+.products h2 {
+  text-transform: uppercase;
+  
+}
+
+.features ul {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.features ul li {
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
 
 
+.features ul li a img {
+  width: 370px;
+  height: auto;
+  padding-right: 10%;
+}
+
+.features ul li a img.last {
+  width: 370px;
+  height: auto;
+  padding-right: 0;
+}
+
+
+#floating-button {
+  position:fixed; 
+  right:0; 
+  top:45%;
+  padding: 10px;
+  background-color: rgb(235,117,65);
+  color: #ffffff;
+  opacity: .7;
+  height: 20px;
+  width: 80px;
+  z-index: 999;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  
+}
+
+#reviews {
+/*
+  position:fixed; 
+  right:0; 
+  top:50%;
+  background-color: rgb(235,117,65);
+*/
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 
 
