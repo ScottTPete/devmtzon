@@ -208,14 +208,37 @@ ul.menu li.cart i {
   margin-left: 2%;
 }
 
-.features ul li {
+.features ul li {  
   list-style: none;
   display: inline-block;
-  width: 30%;
+  width: 370px;
+  height: auto;
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
 
+.features ul li h2 {
+  font-size: 1em;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;  
+}
+
+.feature1 {
+  background-image: url(/images/home/feature1.jpg);
+  background-size: cover;  
+}
+
+.feature2 {
+  background-image: url(/images/home/feature2.jpg);
+  background-size: cover; 
+}
+
+.feature3 {
+  background-image: url(/images/home/feature3.jpg);
+  background-size: cover; 
+}
 
 .features ul li a img {
   width: 370px;
