@@ -200,6 +200,9 @@ ul.menu li.cart i {
   
 }
 
+.features {
+  padding: 15px 0;  
+}
 .features ul {
   display: inline-block;
   margin-left: 2%;
@@ -256,6 +259,44 @@ ul.menu li.cart i {
   text-decoration: none;
 }
 
+.products h2 {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.mainbox {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  width: 350px;
+  min-height: 250px;
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+}
+
+.card img {
+  max-height: 200px;
+  max-height: auto;
+  margin: 10px;
+}
+
+.card p {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+} 
+
+.card p price {
+  font-weight: bold;
+}
 
 
 
