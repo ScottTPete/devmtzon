@@ -14,6 +14,9 @@
   width: 66%;
 }
 
+html {
+  overflow: none;
+}
 
 body {
   margin: 0;
@@ -29,9 +32,9 @@ div.image {
 }
 
 header {
-  width: 1333px;
+  width: 1280px;
   height: 625px;
-  padding: 20px 40px;
+  padding: 20px 0 0 40px;
 }
 
 header a img {
@@ -43,7 +46,9 @@ header a img {
 
 ul.menu {
 /*  background-color: black;*/
-  padding-left: 40%;
+  margin-right: 0;
+  margin-left: 60%;
+  width: 76%;
 }
 
 ul.menu li {
@@ -149,14 +154,6 @@ ul.menu li.cart i {
   line-height: 46px;
   margin-bottom: 20px;  
 }
-/*
-
-#slider.container button {
-  background-color: rgb(235,117,65);
-  padding: 10px 15px;
-  border: 2px solid white;
-}
-*/
 
 #slider a.shop {
   color: #ffffff;
@@ -195,11 +192,6 @@ ul.menu li.cart i {
 }
 
 
-.products h2 {
-  text-transform: uppercase;
-  
-}
-
 .features {
   padding: 15px 0;  
 }
@@ -211,18 +203,27 @@ ul.menu li.cart i {
 .features ul li {  
   list-style: none;
   display: inline-block;
-  width: 370px;
-  height: auto;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  width: 375px;
+  height: 375px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
 }
 
 .features ul li h2 {
-  font-size: 1em;
+  font-size: 1.8em;
   color: white;
   font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
   border-top: 2px solid white;
   border-bottom: 2px solid white;  
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: center;
 }
 
 .feature1 {
@@ -282,31 +283,39 @@ ul.menu li.cart i {
   text-decoration: none;
 }
 
+.products {
+  padding: 0 70px;
+}
+
 .products h2 {
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 10px 0;
 }
 
-.mainbox {
+#mainbox {
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
   box-sizing: border-box;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .card {
-  flex: 1;
-  width: 350px;
+  display: inline-block;
+  width: 300px;
   min-height: 250px;
-  padding: 10px;
+  padding: 10px 35px 10px 35px;
   margin: 10px 10px 0 10px;
+/*  background-color: blue;*/
 }
 
 .card img {
   max-height: 200px;
   max-height: auto;
-  margin: 10px;
+/*  margin: 10px;*/
+  margin: 10px 0;
 }
 
 .card p {
@@ -315,9 +324,10 @@ ul.menu li.cart i {
   text-transform: none;
   font-size: 14px;
   font-weight: normal;
+  margin-bottom: 10px;
 } 
 
-.card p price {
+.card p.price {
   font-weight: bold;
 }
 
@@ -326,24 +336,4 @@ ul.menu li.cart i {
 
 
 
-@media only screen and (max-width: 550px) {
-    .column-1, 
-    .column-2, 
-    .column-3, 
-    .column-4, 
-    .column-5, 
-    .column-6, 
-    .column-7, 
-    .column-8, 
-    .column-9, 
-    .column-10, 
-    .column-11, 
-    .column-12 {
-        width: auto;
-        float: none;
-    }
-
-    .column + .column {
-        margin-left: 0;
-    }
 }
