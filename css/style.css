@@ -312,7 +312,6 @@ ul.menu li.cart i {
   min-height: 250px;
   padding: 10px 35px 10px 35px;
   margin: 10px 10px 0 10px;
-/*  background-color: blue;*/
 }
 
 .card img {
@@ -540,7 +539,6 @@ footer p {
 }
 
 footer ul {
-/*  float: right;*/
   position: absolute;
   right: 80px;
   bottom: 10px;
@@ -554,3 +552,45 @@ footer ul li img {
   width: 40px;
   height: auto;
 }
+
+/* SHOP STYLES */
+
+#nav2 {
+  position: relative;
+}
+
+.categories #signup input {
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+}
+
+#products {
+  font-family: 'Bad Script', cursive;
+  font-family: 40px;
+/*  float: left;*/
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
