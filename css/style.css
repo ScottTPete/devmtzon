@@ -406,9 +406,21 @@ ul.menu li.cart i {
   list-style: none;
 }
 
-#twitter img {
-  width: 15px;
-  height: 15px;
+#twitter .username a img {
+  width: 65px;
+  height: 65px;
+}
+
+
+#twitter a {
+  text-decoration: none;
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+}
+
+#twitter .handle, .date {
+  color: rgb(204,204,204);
 }
 
 #twitter .title {
@@ -465,33 +477,29 @@ ul.menu li.cart i {
 
 #signup input {
   width: 80%;
-  height: 30px;
+  height: 35px;
   border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
 }
 
 #signup button {
   width: 80%;
   padding: 10px 0;
   border-radius: 5px;
-/*  border-bottom-style: outset;*/
-/*  border-top-style: outset;*/
   border-bottom-color: rgb(235,117,65);
   border-bottom-width: 2.5px;
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
-/*
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-*/
-/*  border-top-color: rgb(235,117,65);*/
-  background-color: rgb(238,118,57);
-  
+  background-color: rgb(238,118,57);  
   font-size: 22px;
   font-weight: 500;
   color: white;
   font-family: "Just Another Hand", sans-serif;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 #signup p {
@@ -510,18 +518,39 @@ ul.menu li.cart i {
   width: 25%;
 }
 
+#footer1 ul li a:hover {
+  color: rgb(115,115,115);
+}
+
 footer {
   clear: both;
   background-color: rgb(237,233,221);
+  height: 80px;
+  position: relative;
 }
 
 footer p {
   float: left;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(48,48,48);
+  text-transform: none;
+  padding-top: 35px;
+  padding-left: 80px;
 }
 
 footer ul {
-  float: right;
+/*  float: right;*/
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
 }
 footer ul li {
   display: inline-block;
+  padding-top: 15px;
+}
+
+footer ul li img {
+  width: 40px;
+  height: auto;
 }
