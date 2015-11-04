@@ -32,6 +32,8 @@ body {
   border-bottom: 1px solid rgb(204,204,204);
   padding-bottom: 20px;
   margin-bottom: 10px;
+  position: fixed;
+  background-color: white;
 }
 
 header .all-pages {
@@ -112,6 +114,7 @@ ul.menu-white li.cart i {
 
 .breadcrumbs {
   float: left;
+  margin-left: 40px;
 }
 
 .breadcrumbs ul {
@@ -692,16 +695,17 @@ footer ul li img {
   font-family: 'Bad Script', cursive;
   font-size: 50px;
   position: absolute;
-  left: 30px;
+  left: 75px;
   top: 170px;
-  margin: 0 0 50px 0;
+  margin: 15px 0 50px 0;
   font-weight: 300;
+/*  font-style: italic;*/
+  letter-spacing: 3px;
 }
 
 
 .all-products {
   padding-top: 30px;
-/*  margin-top: 30px;*/
 }
 
 
