@@ -23,9 +23,66 @@ body {
   padding: 0;
 }
 
+/* WHITE HEADER STYLES - all pages except index.html */
+
+.white-header {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 0 40px;
+}
+
+ul.menu-white li {
+  list-style: none;
+  font-size: 1.5em;
+  color: rgb(48,48,48);
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1%;
+}
 
 
-/* HEADER STYLES */
+ul.menu-white li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgb(48,48,48);
+  font-family: "Just Another Hand", sans-serif;
+}
+
+ul.menu-white li a:hover {
+  color: rgb(235,117,65);
+  text-decoration: 5px solid rgb(235,225,195);
+}
+
+ul.menu-white li span i {
+  color: rgb(48,48,48);
+  font-size: 0.5em;
+}
+
+ul.menu-white li i {
+  color: rgb(48,48,48);
+  font-size: 0.8em;
+}
+
+
+ul.menu-white li.cart {  
+  background-color: rgb(235,225,195);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+ul.menu-white li.cart span {
+  color: rgb(48,48,48);
+  padding: 0 10px;
+}
+
+ul.menu-white li.cart i {
+  color: rgb(48,48,48);
+  padding: 0 5px;
+}
+
+
+/* HOME HEADER STYLES */
 
 div.image {
   background-image: url(../images/home/slideshow_2.jpg);
@@ -554,6 +611,8 @@ footer ul li img {
 }
 
 /* SHOP STYLES */
+
+
 
 #nav2 {
   position: relative;
