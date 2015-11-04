@@ -27,20 +27,41 @@ body {
 
 .white-header {
   width: 100%;
-  height: auto;
+  height: 90px;
   padding: 20px 0 0 40px;
+  border-bottom: 1px solid rgb(204,204,204);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+header .all-pages {
+  height: 90px;
+  width: 1280px;
+  padding: 20px 0 0 40px;
+}
+
+
+.col-sm-white img {
+  width: 300px; 
+  height: auto;
+}
+
+.col-lg-white {
+  margin-right: 0;
+  margin-left: 30%;
+  width: 76%;
 }
 
 ul.menu-white li {
   list-style: none;
   font-size: 1.5em;
   color: rgb(48,48,48);
+  font-weight: bold;
   font-family: "Just Another Hand", sans-serif;
   text-transform: uppercase;
   display: inline-block;
   padding: 0 1%;
 }
-
 
 ul.menu-white li a {
   text-decoration: none;
@@ -81,6 +102,53 @@ ul.menu-white li.cart i {
   padding: 0 5px;
 }
 
+#nav2 {  
+  position: relative;
+  float: left;
+  height: 40px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.breadcrumbs {
+  float: left;
+}
+
+.breadcrumbs ul {
+  margin: 0px;
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: rgb(79,79,79);
+}
+
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+/*  font-size: 12px;*/
+   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  color: rgb(48,48,48);
+}
+
+.categories {
+  float: right;
+  margin-right: 20px;
+  padding-right: 40px;
+}
+
+.categories select {
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+  color: rgb(115,115,115)
+}
+
 
 /* HOME HEADER STYLES */
 
@@ -99,6 +167,11 @@ header a img {
   height: auto;
   float: left;
   padding-left: 30px;
+}
+
+.col-sm img {
+  width: 300px; 
+  height: auto;
 }
 
 ul.menu {
@@ -610,35 +683,29 @@ footer ul li img {
   height: auto;
 }
 
+
+
 /* SHOP STYLES */
 
 
-
-#nav2 {
-  position: relative;
-}
-
-.categories #signup input {
-  width: 40px;
-  height: 35px;
-  border-radius: 5px;
-  border: 1px solid rgb(227,227,227);
-  padding-left: 10px;
-  position: absolute;
-  right: 50px;
-  top: 100px;
-}
-
 #products {
   font-family: 'Bad Script', cursive;
-  font-family: 40px;
-/*  float: left;*/
+  font-size: 50px;
   position: absolute;
-  left: 50px;
-  top: 100px;
+  left: 30px;
+  top: 170px;
+  margin: 0 0 50px 0;
+  font-weight: 300;
 }
 
-
+.all-products {
+/*  padding: 15px;*/
+/*
+  position: absolute;
+  left: 30px;
+  top: 250px;
+*/
+}
 
 
 
