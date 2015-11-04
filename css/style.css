@@ -159,7 +159,12 @@ ul.menu-white li.cart i {
 /* HOME HEADER STYLES */
 
 div.image {
-  background-image: url(../images/home/slideshow_2.jpg);
+  background-image: url(../images/home/slideshow_1.jpg);
+/*
+  -moz-transform:scale(1);
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+*/
 }
 
 header {
@@ -238,16 +243,13 @@ ul.menu li.cart i {
 }
 
 .dropdown ul {
-/*  background-color: black;*/
   display: none;
   min-width: 200px;
-/*  position: absolute;*/
   text-align: right;
   z-index: 1000;
 }
 
 .dropdown ul li {
-/*  background-color: black;*/
   list-style: none;
   font-size: 1.1em;
   color: white;
@@ -375,6 +377,7 @@ ul.menu li.cart i {
 .feature3 {
   background-image: url(/images/home/feature3.jpg);
   background-size: cover; 
+  margin-right: 0;
 }
 
 .features ul li a img {
@@ -693,7 +696,6 @@ footer ul li img {
 
 /* SHOP STYLES */
 
-
 #products {
   font-family: 'Bad Script', cursive;
   font-size: 50px;
@@ -704,12 +706,17 @@ footer ul li img {
 }
 
 
-.all-products {
-/*  padding-top: 30px;*/
+/* CAUSE STYLES */
+
+.main-img {  
+  position: relative;
+  float: left;
+  -moz-transform:scale(0.8);
+  -webkit-transform:scale(0.8);
+  transform:scale(0.8);
+  margin: 70px auto 0 auto;
+  
 }
-
-
-
 
 
 
