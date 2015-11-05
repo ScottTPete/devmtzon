@@ -192,14 +192,12 @@ header a img {
 }
 
 ul.menu {
-/*  background-color: black;*/
   margin-right: 0;
   margin-left: 60%;
   width: 76%;
 }
 
 ul.menu li {
-/*  background-color: black;*/
   list-style: none;
   font-size: 1.5em;
   color: white;
@@ -210,7 +208,6 @@ ul.menu li {
 }
 
 ul.menu li a {
-/*  background-color: black;*/
   text-decoration: none;
   font-size: 1em;
   color: white;
@@ -264,7 +261,6 @@ ul.menu li.cart i {
 }
 
 .dropdown ul li a {
-/*  background-color: black;*/
   text-decoration: none;
   font-size: 1em;
   color: white;
@@ -429,7 +425,6 @@ ul.menu li.cart i {
   color: #ffffff;
   text-decoration: none;
   font-size: 11px;
-/*  padding-right: 10px;*/
 }
 
 .products {
@@ -488,7 +483,6 @@ ul.menu li.cart i {
 #news {
   width: 50%;
   float: left;
-/*  background-color: blue;*/
 }
 
 #news .title {
@@ -548,6 +542,7 @@ ul.menu li.cart i {
 
 #twitter ul li {
   list-style: none;
+  margin-bottom: 25px;
 }
 
 #twitter .username a img {
@@ -566,6 +561,12 @@ ul.menu li.cart i {
 #twitter .handle, .date {
   color: rgb(204,204,204);
 }
+/*
+
+#twitter .date {
+  float: right;
+}
+*/
 
 #twitter .title {
   color: rgb(48,48,48);
@@ -578,6 +579,33 @@ ul.menu li.cart i {
   border-bottom: 1px solid rgb(227,227,227);
   margin: 0 80px 20px 10px;
   padding: 10px 0;
+}
+
+#twitter p.message {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgb(48,48,48);
+}
+
+.reply img {
+  width: 15px;
+  height: auto;
+}
+
+.retweet img {
+  width: 15px;
+  height: auto;
+}
+
+.like i {
+  width: 15px;
+  height: auto;
+}
+
+#twitter i {
+  color: rgb(162,162,162);
 }
 
 #footer1 {
@@ -771,6 +799,10 @@ div.#give {
   font-weight: bold;
 }
 
+#malnutrition {
+  margin: 0 170px;
+}
+
 #malnutrition ul li {
   color: rgb(48,48,48);
   list-style: none;
@@ -799,6 +831,9 @@ div.#give {
   font-weight: bold;
 }
 
+#partners {
+  margin: 0 80px;
+}
 
 #partners ul li {
   display: inline-block;
