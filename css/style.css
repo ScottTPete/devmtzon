@@ -954,3 +954,93 @@ div.vid {
   margin-top: 120px;
   margin-bottom: 15px;    
 }
+
+#blog-header {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 44px;
+  text-transform: uppercase; 
+  width: 250px;
+  height: 40px;
+  margin: 0;
+/*
+  float: left;
+  margin: 250px 0 0 50px;
+*/
+}
+
+#posts {
+  width: 100%;
+  clear: both;
+}
+
+.post {
+  width: 100%;
+}
+
+.post-data {
+  width: 30%;
+  float: left;
+}
+
+.post-content {
+  width: 60%;
+  float: left;
+  border-left: 1px solid rgb(204,204,204);
+  margin: 0 50px 10px 0;
+  padding-left: 40px;
+  
+}
+
+.post-data ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.post-data ul li.tags ul.listed-tags li {
+  list-style: none;
+  display: inline-block;
+}
+
+.post-data ul li.tags ul.listed-tags a {
+  text-decoration: none;
+  color: rgbb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.social-media-icons i {
+  color: rgb(162,162,162);
+}
+
+p.entry-title {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 28px;
+  text-transform: uppercase; 
+}
+
+p.subtitle {
+  color: rgb(48,48,48);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 16px;
+  text-transform: none;
+}
+
+p.content {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
