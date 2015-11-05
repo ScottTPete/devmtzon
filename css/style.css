@@ -862,6 +862,40 @@ div.#give {
 
 /* STORY STYLES */
 .vid {
-  margin: 0 auto;
+  margin: 0 100px;
 }
 
+#about {
+  margin: 10px 10px 10px 50px;
+  width: 60%;
+  float: left;
+}
+
+#about p {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#grassia {
+  margin: 10px 50px 10px 10px;
+  width: 30%;
+  float: left;
+}
+
+.contact {
+  clear: both;
+}
+/*
+#about blockquote {
+  color: rgb(48,48,48);
+  text-transform: none;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 0px;
+}*/
