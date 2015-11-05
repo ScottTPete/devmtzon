@@ -989,7 +989,7 @@ div.vid {
   width: 60%;
   float: left;
   border-left: 1px solid rgb(204,204,204);
-  margin: 0 50px 10px 0;
+  margin: 0 50px 40px 0;
   padding-left: 40px;
   
 }
@@ -999,19 +999,51 @@ div.vid {
   display: inline-block;
 }
 
-.post-data ul li.tags ul.listed-tags li {
-  list-style: none;
-  display: inline-block;
+li.tags {
+  border-bottom: 1px solid rgb(204,204,204);
 }
 
-.post-data ul li.tags ul.listed-tags a {
+ul.listed-tags {
+  margin: 10px 0;
+  padding: 0 20px 0 0;
+}
+
+ul.listed-tags li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid rgb(204,204,204);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+ul.listed-tags a {
   text-decoration: none;
-  color: rgbb(48,48,48);
+  color: rgb(162,162,162);
   text-transform: none;
   font-weight: normal;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.post-date {
+  color: rgbb(48,48,48);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 24px;
   line-height: 25px;
+}
+
+.comments {
+  color: rgb(162,162,162);
+}
+
+ul.social-media-icons {
+  color: rgb(162,162,162);
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
 .social-media-icons i {
