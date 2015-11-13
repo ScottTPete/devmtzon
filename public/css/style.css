@@ -5,11 +5,29 @@
 /*
 * {
   outline: 1px dotted red;
-}
-*/
+}*/
+
 
 .clearfix {
   overflow: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ui-view {
+  width: 100%; 
+  min-width: 100%; 
+}
+
+.main-content {
+  position: absolute;
+  top: 111px;
+  margin: 0;
+  padding: 5px;
 }
 
 .col-sm {
@@ -30,6 +48,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 /* WHITE HEADER STYLES - all pages except index.html */
@@ -45,6 +64,8 @@ body {
   z-index: 1000;
   background-color: #ffffff;
 }
+
+
 
 header .all-pages {
   height: 90px;
@@ -178,7 +199,7 @@ div.image {
 
 header {
   width: 1280px;
-  height: 625px;
+  height: 90px;
   padding: 20px 0 0 40px;
 }
 
@@ -317,6 +338,7 @@ ul.menu li.cart i {
   margin: 0;
   padding: 0;
   border: 0;
+  width:100%;
 }
 
 
@@ -771,9 +793,9 @@ span.bold {
   text-transform: uppercase;
 }
 
-div.#give {
-/*  margin: 10px auto;*/
-}
+/*#give {
+  margin: 10px auto;
+}*/
 
 #give ul li {  
   list-style: none;
@@ -1084,4 +1106,53 @@ p.content {
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   line-height: 25px;
+}
+
+/* AUTH STYLES */
+
+.auth {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth h2 {
+  font-family: "Just Another Hand", sans-serif;
+}
+
+.auth input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+}
+
+.auth button {
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  background-color: rgb(238,118,57);  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.auth span {
+  color: rgb(235,117,65);
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
 }
