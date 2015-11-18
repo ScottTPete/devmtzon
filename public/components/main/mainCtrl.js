@@ -1,9 +1,11 @@
 var app = angular.module('ecommerce');
 
-app.controller('MainCtrl', function () {
+app.controller('MainCtrl', function (authService) {
 	
-	this.goToCart = function () {
-		console.log('cart');
+	var main = this;
+	
+	main.isLoggedIn = function () {
+		return authService.isLoggedIn();
 	}
 	
 })

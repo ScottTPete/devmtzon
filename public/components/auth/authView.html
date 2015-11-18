@@ -1,4 +1,15 @@
+<div ng-if="auth.isLoggedIn()" class="auth">
+	<div>
+	<p>My Orders:</p>
+	<div ng-repeat="order in auth.orders">
+		<a ui-sref="main.orders({id: order._id})">{{order._id}} {{order.date | date}}</a>
+	</div>
+		
+	</div>
+	<button ng-click="auth.logout()">Logout</button>
+</div>
 <div ng-if="!auth.isLoggedIn()">
+	<h3 ng-if="auth.message">{{auth.message}}</h3>
 	<div ng-if="auth.showRegister" class="auth">
 		<div>
 			<h2>REGISTER</h2>
@@ -19,6 +30,3 @@
 	</div>
 </div>
 
-<div ng-if="auth.isLoggedIn()" class="auth">
-	<button ng-click="auth.logout()">Logout</button>
-</div>

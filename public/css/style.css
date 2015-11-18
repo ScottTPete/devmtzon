@@ -7,6 +7,14 @@
   outline: 1px dotted red;
 }*/
 
+.outline {
+  outline: 1px dotted red;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 .clearfix {
   overflow: auto;
@@ -20,14 +28,16 @@
 
 ui-view {
   width: 100%; 
-  min-width: 100%; 
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 .main-content {
   position: absolute;
   top: 111px;
   margin: 0;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 .col-sm {
@@ -188,8 +198,24 @@ ul.menu-white li.cart i {
 
 /* HOME HEADER STYLES */
 
+#logo {
+  height: 80px;
+  width: 80px;
+}
+
+.green {
+  color: seagreen !important;
+  border: 1px solid seagreen;
+  border-radius: 10px;
+  padding: 2px;
+}
+
 div.image {
-  background-image: url(../images/home/slideshow_1.jpg);
+  background-image: url(../images/home/group-proj-1.jpg);
+  height: 100%;
+  background-size: cover;
+  width: auto;
+  max-width: 100%;
 /*
   -moz-transform:scale(1);
   -webkit-transform:scale(0.9);
@@ -300,7 +326,7 @@ ul.menu li.cart i {
 }
 
 #slider h1, p {
-  color: #ffffff;
+  color: #000;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -477,6 +503,7 @@ ul.menu li.cart i {
   min-height: 250px;
   padding: 10px 35px 10px 35px;
   margin: 10px 10px 0 10px;
+  cursor: pointer;
 }
 
 .card img {
@@ -1111,10 +1138,12 @@ p.content {
 /* AUTH STYLES */
 
 .auth {
+  margin-top: 20px;
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  height: 50%;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1155,4 +1184,193 @@ p.content {
   text-decoration: underline;
   cursor: pointer;
   margin-left: 10px;
+}
+
+/* Admin styles */
+
+.admin {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.admin h2 {
+  font-family: "Just Another Hand", sans-serif;
+}
+
+.admin input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(227,227,227);
+  padding-left: 10px;
+}
+
+.admin button {
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-bottom-color: rgb(235,117,65);
+  border-bottom-width: 2.5px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  background-color: rgb(238,118,57);  
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.admin span {
+  color: rgb(235,117,65);
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.admin > .popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(238,118,57);
+  min-height: 90px;
+  min-width: 200px;
+  font-size: 24px;
+  font-family: "Just Another Hand", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.admin > .half-page.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.admin > .half-page.productsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.thumbnail {
+  height: 100px;
+  width: auto;
+  max-height: 100px;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Product Details page*/
+
+.productDetails {
+  padding: 5px;
+}
+
+.productImg {
+  height: 400px;
+  width: auto;
+  float: left;
+  margin: 10px;
+}
+
+
+/* Cart page */
+
+.miniThumb {
+  height: 40px;
+  width: 40px;
+}
+
+.cartContainer {
+  /*max-height: 80%;*/
+  min-height: 50%;
+  max-width: 80%;
+  min-width: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartList {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* order confirmation */
+
+.orderConfirm {
+  position: fixed;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** {
+  outline: 1px dotted red;
+}*/
+
+/* edit product modal */
+.modalMask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1001;
+}
+
+.editProductModal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  /*position: fixed;
+  top: 10%;
+  margin: 0 auto;*/
+  min-height: 50%;
+  width: 60%;
+  z-index: 1002;
 }

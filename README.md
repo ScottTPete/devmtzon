@@ -1,4 +1,6 @@
-# kutoa
+# devmtzon
+
+Note: uses controllerAs
 
 
 

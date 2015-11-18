@@ -21,11 +21,11 @@ var User = new Schema({
 
 User.pre('save', function (next) {
 	var user = this;
-	
+
 	if (!user.isModified('password')) {
 		return next();
 	}
-	
+
 	bcrypt.genSalt(10, function (err, salt) {
 		if (err) {
 			return next(err);
@@ -33,31 +33,31 @@ User.pre('save', function (next) {
 		bcrypt.hash(user.password, salt, null, function (err, hash) {
 			user.password = hash;
 			return next();
-		})
-	})
-})
+		});
+	});
+});
 
 User.methods.verifyPassword = function (password) {
 	var dfd = q.defer();
-	
+
 	bcrypt.compare(password, this.password, function (err, isMatch) {
 		if (err) {
 			dfd.reject(err);
 		}
 		else {
-			dfd.resolve(isMatch)
+			dfd.resolve(isMatch);
 		}
-	})
-	
+	});
+
 	return dfd.promise;
-}
+};
 
 User.options.toJSON = {
-	transform: function (doc, ret, options) {
+	transform: function (doc, ret) {
 		delete ret.__v;
 		delete ret.password;
 		return ret;
 	}
-}
+};
 
 module.exports = Mongoose.model('User', User);

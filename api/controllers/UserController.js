@@ -8,6 +8,6 @@ module.exports = {
 				return res.status(500).send('error creating user');
 			}
 			return res.status(200).send('successful registration');
-		})
+		});
 	}
-}
+};

@@ -1,20 +1,20 @@
     <div class="white-header">
     <header class="all-pages">
       <div class="container col-sm-white">
-        <a ui-sref="main">
-          <img src="../images/home/logo.png" title="KUTOA" />
+        <a ui-sref="main.landing">
+          <img id="logo" src="../images/home/logowhiteblue.png" title="Devmtzon" />
         </a>
       </div>
       <div class="col-lg-white">
         <ul class="menu-white">
-          <li>Shop
-            <a href="shop.html" title="shop" title="Shop" class="sub-menu">
-              <span class="arrow">
+          <li>
+            <a ui-sref="main.products" title="Shop">Shop
+              <!--<span class="arrow">
                 <i class="fa fa-caret-down"></i>
-              </span>
+              </span>-->
             </a>
             
-            <div class="dropdown">
+            <!--<div class="dropdown">
               <ul>
                 <li>
                   <a href="#">Health Bars</a>
@@ -41,7 +41,7 @@
                   <a href="#">Store Locator</a>
                 </li>
               </ul>
-            </div>
+            </div>-->
           </li>
           
           <li>
@@ -54,33 +54,33 @@
               <a ui-sref="main.blog" alt="Blog">Blog</a>
           </li>
           <li>
-            <a href="https://twitter.com/kutoabars" alt="KUTOA on Twitter">
+            <a href="" alt="KUTOA on Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/KUTOAbars" alt="KUTOA on Facebook">
+            <a href="" alt="KUTOA on Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/KUTOAbars/" alt="KUTOA on Instagram">
+            <a href="" alt="KUTOA on Instagram">
               <i class="fa fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="mailto:empower@kutoa.com" title="Email KUTOA">
+            <a href="" title="Email KUTOA">
               <i class="fa fa-envelope"></i>
             </a>
           </li>
           <li>
             <a ui-sref="main.auth" alt="My Account">
-              <i class="fa fa-user"></i>
+              <i ng-class="{green: main.isLoggedIn()}" class="fa fa-user"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-search" title="Search"></i>
+            <a ui-sref="main.admin">
+              <i class="fa fa-cog" alt="admin"></i>
             </a>
           </li>
           <li class="cart">
