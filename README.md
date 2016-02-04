@@ -8,10 +8,10 @@ Note: uses controllerAs
 #### Title me this?
 Today I went on a walk
 
-#### lvl 2
+####
 *It was a good walk*
 
-#### lvl 3
+####
 Because walks are good for your health.
 `for(var walk = 0; walk < 10000; walk++){}`
 
