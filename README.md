@@ -37,7 +37,6 @@ server.js
 // Optionally you can create a repository object with a type and url property
 // IMPORTANT in your console run npm install --save express
 
-### Code
 ####
 * Create a new repository
 * Create the following files in this structure in your project folder
