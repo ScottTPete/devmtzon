@@ -76,23 +76,47 @@ If Npm install or Bower install fails make sure you are in the right directory. 
 ## D1) Creating the server
 
 ###  Server.js
-####
-In your server.js file import express
 
-### Code
 ####
-* Create a new repository
-* Create the following files in this structure in your project folder
+* In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
+* Run nodemon 'your server file directory' and navigate your url to http://localhost:YourPortNumber
+
+####
+
+Partial Example
 
 ```
-api/
-    controllers/
-        productController.js
-public/
-    (already included)
+var express = some code,
+    app = some code;
 
-package.json
-server.js
+app.use(some code.static(__dirname + 'some directory'));
 
+
+app.listen(some port, function () {
+	console.log('Listening on port', some port );
+
+	this will log to your console where your node is being ran NOT to your browser console
+
+});
 
 ```
+####
+
+ Actual Code
+
+ ```
+
+var express = require('express'),
+    app = express(),
+    port = 8080;
+
+
+app.use(express.static(__dirname + '/public'));
+
+
+app.listen(port, function () {
+	console.log('Listening on port', port);
+});
+
+ ```
+

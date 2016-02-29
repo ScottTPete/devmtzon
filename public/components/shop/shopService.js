@@ -9,25 +9,12 @@ app.service('shopService', function ($http, $q) {
 
 		$http.get('/api/getProductList')
 			.then(function (products) {
+				console.log(products);
 				dfd.resolve(products.data);
 			})
 			.catch(function (error) {
 				console.log(error);
 				dfd.reject(error);
-			});
-
-		return dfd.promise;
-	};
-
-	this.getProductDetails = function (id) {
-		var dfd = $q.defer();
-
-		$http.get('/api/productDetails/' + id)
-			.then(function (product) {
-				dfd.resolve(product.data);
-			})
-			.catch(function (err) {
-				dfd.reject(err);
 			});
 
 		return dfd.promise;
