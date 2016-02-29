@@ -18,7 +18,7 @@ app.get('/api/getProductList', function(req, res) {
 
         }
     });
-})
+});
 
 
 app.listen(port, function () {

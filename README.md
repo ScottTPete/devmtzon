@@ -79,7 +79,7 @@ If Npm install or Bower install fails make sure you are in the right directory. 
 
 ####
 * In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
-* Run nodemon 'your server file directory' and navigate your url to http://localhost:YourPortNumber
+* Run nodemon and navigate your url to http://localhost:YourPortNumber
 
 ####
 
@@ -119,4 +119,52 @@ app.listen(port, function () {
 });
 
  ```
+
+## D1) Express Routes
+
+### Create a get
+
+####
+* In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
+* Run nodemon and navigate your url to http://localhost:YourPortNumber
+
+####
+
+Partial Example
+
+```
+var express = some code,
+    app = some code;
+
+app.use(some code.static(__dirname + 'some directory'));
+
+
+app.listen(some port, function () {
+	console.log('Listening on port', some port );
+
+	this will log to your console where your node is being ran NOT to your browser console
+
+});
+
+```
+####
+
+ Actual Code
+
+ ```
+
+var express = require('express'),
+    app = express(),
+    port = 8080;
+
+
+app.use(express.static(__dirname + '/public'));
+
+
+app.listen(port, function () {
+	console.log('Listening on port', port);
+});
+
+ ```
+
 
