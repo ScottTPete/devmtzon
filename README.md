@@ -201,7 +201,7 @@ app.listen(port, function () {
 
 ####
 
-* Here is a example of what is happening when you make a request to your sever
+<h2>Here is a example of what is happening when you make a request to your sever </h2>
 <img src="http://i.imgur.com/5HWgDFF.jpg" width="50%" height="100%" style="margin-left:auto; margin-right:auto;"></img>
 
 
