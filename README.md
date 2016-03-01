@@ -4,9 +4,9 @@ Day 1
 
 ###  Lodash
 ####
+
 https://lodash.com/docs#findIndex
-### Code
-####
+
 * lodash is a javascript utility library that makes working with arrays and objects easier.
 * Here is a list of lodash methods that we will be using over the next few days
 
@@ -202,6 +202,8 @@ app.listen(port, function () {
 ####
 
 * Here is a example of what is happening when you make a request to your sever
+<img src="http://i.imgur.com/5HWgDFF.jpg" width="100%" height="100%"></img>
+
 
 ####
 
