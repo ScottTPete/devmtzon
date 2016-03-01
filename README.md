@@ -11,35 +11,20 @@ https://lodash.com/docs#findIndex
 * Here is a list of lodash methods that we will be using over the next few days
 
 ```
- _.findIndex(products, {_id: some value would go here});  The first parameter is the array that we are looking at and the second parameter is the property we are looking for, in this example that is _id
- _.assign(products[productIndex], update); The first parameter is the array and the index of the value we need to update and the second parameter is the value we are going to use to update the index
+ _.findIndex(products, {_id: some value would go here});
+ // The first parameter is the array that we are looking at and
+ // The second parameter is the property we are looking for, in this example that is _id
+
+
+ _.assign(products[productIndex], update);
+ //The first parameter is the array and the index of the value we need to update and
+ // The second parameter is the value we are going to use to update the index
 
 ```
 
 
 ## D1) Setting up the project
 
-###  Folder Structure
-####
-Proper and consistent folder structure can save you and your team hours of work.  The most important rule of folder structure is consistency.  Create a folder for you server files. Common names for this folder are server or api
-
-### Code
-####
-* Create a new repository
-* Create the following files in this structure in your project folder
-
-```
-api/
-    controllers/
-        productController.js
-public/
-    (already included)
-
-package.json
-server.js
-
-
-```
 
 ### Creating the package.json file
 
@@ -82,18 +67,11 @@ Here is an example of a package.json file after express has been installed via n
 
 ```
 
-### Install Dependencies
-####
-Run npm install and bower install
-
-####
-If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
-
-## D1) Creating the server
 
 ###  Server.js
 
 ####
+
 * In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
 * Run nodemon and navigate your url to http://localhost:YourPortNumber
 
@@ -116,6 +94,7 @@ app.listen(some port, function () {
 });
 
 ```
+
 ####
 
  Actual Code
@@ -135,6 +114,14 @@ app.listen(port, function () {
 });
 
  ```
+
+### Install Dependencies
+####
+Run npm install and bower install
+
+####
+If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
+
 
 ## D2) Importing 3rd Parties
 
@@ -201,8 +188,8 @@ app.listen(port, function () {
 
 ####
 
-<h2>Here is a example of what is happening when you make a request to your sever </h2>
-<img src="http://i.imgur.com/5HWgDFF.jpg" width="50%" height="100%" style="margin-left:auto; margin-right:auto;"></img>
+<h2 style="text-align:center;">Here is a example of what is happening when you make a request to your sever </h2>
+<img src="http://i.imgur.com/5HWgDFF.jpg" width="50%" height="100%" style="display:block;margin-left:auto; margin-right:auto;"></img>
 
 
 ####
@@ -488,6 +475,31 @@ app.delete('/api/getProduct/:id', function(req,res) {
     }
 
 });
+
+
+```
+
+
+###  Folder Structure
+####
+
+Folder structure is a huge part of keeping your code maintainable
+Create a folder for you server files. Common names for this folder are server or api
+
+### Code
+####
+* Create a new repository
+* Create the following files in this structure in your project folder
+
+```
+api/
+    controllers/
+        productController.js
+public/
+    (already included)
+
+package.json
+server.js
 
 
 ```
