@@ -1,11 +1,21 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
      _ = require('lodash'),
+    // TODO require cors and express-session
+    // TODO create a config file and import it. Make sure when you create your config file you use module.exports
+    session = require('express-session'),
+    config = require('./config'),
+    cors = require('cors'),
     app = express(),
     port = 8080;
 
 // We are using express.static to tell express where to find our static files
 
+
+app.use(cors());
+app.use(session({
+    secret: config.server.secret
+}));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
