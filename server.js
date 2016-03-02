@@ -9,8 +9,10 @@ var express = require('express'),
     app = express(),
     port = 8080;
 
-// We are using express.static to tell express where to find our static files
 
+
+// TODO use cors as middleware
+// TODO  express-session as middlware
 
 app.use(cors());
 app.use(session({
@@ -19,9 +21,6 @@ app.use(session({
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
-// Anything that we POST or PUT to the server will be available to us via rec.body
-// req.body is a javascript object
 
 
 var products =
