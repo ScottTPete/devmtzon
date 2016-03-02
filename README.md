@@ -38,6 +38,7 @@ https://lodash.com/docs#findIndex
 This file must be called package.json otherwise npm will not work
 
 ```
+
 {
  "Basic Info" : "name", "author", "version", "description"
  "main": "server.js",
@@ -46,14 +47,16 @@ This file must be called package.json otherwise npm will not work
       },
 }
 
+```
 ####
 
 Here is an example of a package.json file after express has been installed via npm install --save express
 
+```
 {
   "name": "ecommerce",
   "author": "Your name",
-  "license": "ISC",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -72,7 +75,10 @@ Here is an example of a package.json file after express has been installed via n
 
 ####
 
-* In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
+* In your server.js file import express using require
+* Create an express app,
+* Add some express middleware that points express to your static directory "public"
+* Have your app listen to a specific port number.  some popular port numbers are  8080, 8000, 8888, 3000, 4500
 * Run nodemon and navigate your url to http://localhost:YourPortNumber
 
 ####
@@ -92,6 +98,7 @@ app.listen(some port, function () {
 	this will log to your console where your node is being ran NOT to your browser console
 
 });
+
 
 ```
 
@@ -116,7 +123,9 @@ app.listen(port, function () {
  ```
 
 ### Install Dependencies
+
 ####
+
 Run npm install and bower install
 
 ####
@@ -128,9 +137,11 @@ If Npm install or Bower install fails make sure you are in the right directory. 
 ### Import Body parser
 
 ####
+
 * npm install --save body-parser. This will add a node module called body-parser to your node_modules folder and also update your package.json file  so body-parser will be listed as a dependency
-* After body-parser is installed add it ass middleware. You'll need to add both bodyParser.urlencoded and bodyParser.json
+* After body-parser is installed add it as middleware. You'll need to add both bodyParser.urlencoded and bodyParser.json
 * In your server.js file import body-parser using require and apply body-parser to your express application.
+
 ####
 
 Partial Example
@@ -156,6 +167,7 @@ app.listen(port, function () {
 
 
 ```
+
 ####
 
  Actual Code
@@ -176,6 +188,29 @@ app.use(bodyParser.json());
 app.listen(port, function () {
 	console.log('Listening on port', port);
 });
+
+ ```
+
+### Import lodash
+
+####
+
+* npm install --save lodash. This will add a node module called lodash to your node_modules folder and also update your package.json file so lodash will be listed as a dependency
+* We will be using some lodash helper methods later in the project
+* In your server.js file import lodash using require.
+
+####
+
+
+ Actual Code
+
+ ```
+var express = require('express'),
+    bodyParser = require('body-parser'),
+    _ = require('lodash'),
+    app = express(),
+    port = 8080;
+
 
  ```
 
@@ -286,6 +321,7 @@ app.get('/api/getProduct/:id', function(req, res) {
 });
 
 ```
+
 ####
 
 Actual Code
