@@ -26,6 +26,7 @@ https://lodash.com/docs#findIndex
 ```
 
 ### nodemon
+
 ####
 
 http://nodemon.io/
@@ -35,8 +36,9 @@ http://nodemon.io/
 * npm install -g nodemon
 * You will be usign this feature all the time it will allow you to run a server that will watch for changes you make in your code
 
-## D1) Setting up the project
 
+
+## D1) Setting up the project
 
 ### Creating the package.json file
 
@@ -141,10 +143,11 @@ app.listen(port, function () {
 Run npm install and bower install
 
 ####
+
 If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
 
 
-## D2) Importing 3rd Parties
+## Importing 3rd Parties
 
 ### Import Body parser
 
@@ -225,7 +228,7 @@ var express = require('express'),
 
 ####
 
-## D2) Express Routes
+## Express Routes
 
 ### Diagram
 
@@ -291,9 +294,9 @@ app.use(bodyParser.json());
 
 app.get('/api/getProductList', function(req, res) {
  some code here that returns the products
-});
 
 });
+
 
 app.listen(port, function () {
 	console.log('Listening on port', port);
@@ -360,6 +363,7 @@ app.get('/api/getProduct/:id', function(req, res) {
 ####
 
 * To get the product you need to add to the products array you will need to look at the body of the request
+
 
 ####
 
@@ -431,6 +435,7 @@ app.put('/api/getProduct/:id', function(req, res) {
         }
 
 });
+
 
 ```
 
@@ -523,3 +528,77 @@ app.delete('/api/getProduct/:id', function(req,res) {
 
 
 ```
+
+
+## D3) Express-session, CORS
+
+### Install CORS
+
+####
+
+* Install CORS using npm
+* Require CORS in your server file
+* Apply CORS as middleware
+
+####
+
+* npm install --save cors this will add cors to your package.json file as a dependency
+* Use the require() syntax to require cors in your server
+# app.use()
+
+####
+
+Actual Code
+
+```
+// require cors so we can use it in our server
+
+var cors = require('cors');
+
+
+// middleware
+
+app.use(cors());
+
+
+```
+
+
+### Install and configure Express Session
+
+####
+
+* Install express-session using npm
+* Require express-session in your server file
+* Apply express-session as middleware
+* Create a config file that contains your secret
+* Import the config file into your server file and apply the secret to your express middleware
+
+####
+
+* npm install --save express-session this will add express-session to your package.json file as a dependency
+* Use the require() syntax to require express-session  in your server
+# app.use() apply express-session as middleware
+* In your new config file create a server object with a property of secret and a value as your new secret
+* Make sure you module.export your server object so you can then require it in your server file
+
+
+####
+
+Actual Code
+
+```
+// require express-session so we can use it in our server
+
+var session = require('express-session');
+var config = require('the path to your config file');
+
+
+
+// express-session middleware. We are getting the value for secret from our config file config.server.secret
+
+app.use(session({secret:config.server.secret}));
+
+
+```
+
