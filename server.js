@@ -1,18 +1,16 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
     _ = require('lodash');
-app = express(),
+    app = express(),
     port = 8080;
+
+
+
+app.use(express.static(__dirname + '/public'));
 
 //TODO Import body parser and apply it to the app as middleware
 
-app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-
-//Anything that we POST or PUT to the server will be available to us via rec.body
-// req.body is a javascript object
-
+// Nothing to do here this is just our products array
 
 var products =
     [
