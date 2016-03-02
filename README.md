@@ -38,6 +38,7 @@ https://lodash.com/docs#findIndex
 This file must be called package.json otherwise npm will not work
 
 ```
+
 {
  "Basic Info" : "name", "author", "version", "description"
  "main": "server.js",
@@ -46,14 +47,16 @@ This file must be called package.json otherwise npm will not work
       },
 }
 
+```
 ####
 
 Here is an example of a package.json file after express has been installed via npm install --save express
 
+```
 {
   "name": "ecommerce",
   "author": "Your name",
-  "license": "ISC",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -72,7 +75,10 @@ Here is an example of a package.json file after express has been installed via n
 
 ####
 
-* In your server.js file import express using require, create an express app, add some express middleware that points express to your static directory "public", last step have your app listen to a specific port number 8080, 8000, 8888, 3000, 4500 are some popular port numbers
+* In your server.js file import express using require
+* Create an express app,
+* Add some express middleware that points express to your static directory "public"
+* Have your app listen to a specific port number.  some popular port numbers are  8080, 8000, 8888, 3000, 4500
 * Run nodemon and navigate your url to http://localhost:YourPortNumber
 
 ####
@@ -92,6 +98,7 @@ app.listen(some port, function () {
 	this will log to your console where your node is being ran NOT to your browser console
 
 });
+
 
 ```
 
@@ -116,7 +123,9 @@ app.listen(port, function () {
  ```
 
 ### Install Dependencies
+
 ####
+
 Run npm install and bower install
 
 ####
@@ -178,8 +187,52 @@ app.listen(port, function () {
 });
 
  ```
+### Import lodash
+
+####
+
+* npm install --save lodash. This will add a node module called lodash to your node_modules folder and also update your package.json file  so lodash will be listed as a dependency
+* In your server.js file import lodash using require
+* We will be using lodash later in the project
 
 
+####
+
+Partial Example
+
+```
+
+var express = require('express'),
+    bodyParser = require('body-parser'),
+    _ = require('lodash'),
+    app = express(),
+    port = 8080;
+
+
+```
+
+####
+
+ Actual Code
+
+ ```
+var express = require('express'),
+    bodyParser = require('body-parser'),
+    app = express(),
+    port = 8080;
+
+
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
+
+
+app.listen(port, function () {
+	console.log('Listening on port', port);
+});
+
+ ```
 
 
 ## D2) Express Routes
@@ -487,11 +540,14 @@ Folder structure is a huge part of keeping your code maintainable
 Create a folder for you server files. Common names for this folder are server or api
 
 ### Code
+
 ####
+
 * Create a new repository
 * Create the following files in this structure in your project folder
 
 ```
+
 api/
     controllers/
         productController.js
