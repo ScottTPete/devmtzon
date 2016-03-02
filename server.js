@@ -1,9 +1,10 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
-     _ = require('lodash');
+     _ = require('lodash'),
     app = express(),
     port = 8080;
 
+// We are using express.static to tell express where to find our static files
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -107,6 +108,7 @@ app.delete('/api/getProduct/:id', function(req,res) {
     }
 
 });
+
 
 
 app.listen(port, function () {

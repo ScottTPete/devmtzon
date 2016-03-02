@@ -336,7 +336,7 @@ Partial Example
 ```
 
 app.post('/api/getProductList', function(req, res) {
-    var product =Some code;
+    var product = Some code;
     some code to push product to products array
     some code to send back a response
 });
@@ -490,3 +490,4 @@ app.delete('/api/getProduct/:id', function(req,res) {
 
 
 ```
+
