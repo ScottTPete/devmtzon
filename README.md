@@ -147,7 +147,7 @@ Run npm install and bower install
 If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
 
 
-## Importing 3rd Parties
+## D2) Importing 3rd Parties
 
 ### Import Body parser
 
