@@ -544,7 +544,7 @@ app.delete('/api/getProduct/:id', function(req,res) {
 
 * npm install --save cors this will add cors to your package.json file as a dependency
 * Use the require() syntax to require cors in your server
-# app.use()
+* app.use()
 
 ####
 
@@ -578,7 +578,7 @@ app.use(cors());
 
 * npm install --save express-session this will add express-session to your package.json file as a dependency
 * Use the require() syntax to require express-session  in your server
-# app.use() apply express-session as middleware
+* app.use() apply express-session as middleware
 * In your new config file create a server object with a property of secret and a value as your new secret
 * Make sure you module.export your server object so you can then require it in your server file
 
