@@ -212,6 +212,7 @@ app.listen(port, function () {
 ####
 
 * Create  GET Request for the route /api/getProductList in your server.js file that responds with the all the products in the products array
+* After you have created the GET request navigate to the shop section of your app. You should see the products displayed, if you dont see them check your console for errors
 
 ####
 

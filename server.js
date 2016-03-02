@@ -4,13 +4,12 @@ var express = require('express'),
     app = express(),
     port = 8080;
 
-//TODO Import body parser and apply it to the app as middleware
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-//Anything that we POST or PUT to the server will be available to us via rec.body
+// Anything that we POST or PUT to the server will be available to us via rec.body
 // req.body is a javascript object
 
 
@@ -52,13 +51,14 @@ var products =
 ];
 
 
-//Create a get request that returns all the products data
+//Create a GET request that returns all the products data
 
 app.get('/api/getProductList', function(req, res) {
    res.send(products)
 });
 
-//Create a get request that looks for a specific product id
+
+//Create a GET request that looks for a specific product id
 
 app.get('/api/getProduct/:id', function(req, res) {
     var productIndex = _.findIndex(products, {_id: req.params.id});
@@ -92,6 +92,9 @@ app.put('/api/getProduct/:id', function(req, res) {
         }
 
 });
+
+
+//Create a DELETE request that takes the product id from the req.params deletes it then returns the deleted item back in the response
 
 app.delete('/api/getProduct/:id', function(req,res) {
     var  productIndex = _.findIndex(products, {_id: req.params.id});
