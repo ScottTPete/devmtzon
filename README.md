@@ -198,7 +198,7 @@ app.listen(port, function () {
 
 ####
 
-Partial Example
+Actual Code
 
 ```
 
@@ -212,28 +212,6 @@ var express = require('express'),
 ```
 
 ####
-
- Actual Code
-
- ```
-var express = require('express'),
-    bodyParser = require('body-parser'),
-    app = express(),
-    port = 8080;
-
-
-app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-
-
-
-app.listen(port, function () {
-	console.log('Listening on port', port);
-});
-
- ```
-
 
 ## D2) Express Routes
 
@@ -340,6 +318,7 @@ app.get('/api/getProduct/:id', function(req, res) {
 
 ```
 ####
+
 
 Actual Code
 
