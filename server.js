@@ -1,6 +1,5 @@
 var express = require('express'),
-    bodyParser = require('body-parser'),
-    _ = require('lodash');
+   //TODO import your middleware
     app = express(),
     port = 8080;
 
@@ -8,7 +7,7 @@ var express = require('express'),
 
 app.use(express.static(__dirname + '/public'));
 
-//TODO Import body parser and apply it to the app as middleware
+//TODO IMPORTANT  apply your middleware before your routes
 
 // Nothing to do here this is just our products array
 
