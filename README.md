@@ -38,7 +38,7 @@ http://nodemon.io/
 
 
 
-## D1) Setting up the project
+## Setting up the project
 
 ### Creating the package.json file
 
