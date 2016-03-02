@@ -147,7 +147,7 @@ Run npm install and bower install
 If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
 
 
-## D2)  Importing 3rd Partie
+## Importing 3rd Partie
 
 ### Import Body parser
 
@@ -394,7 +394,7 @@ app.post('/api/getProductList', function(req, res) {
 
 ```
 
-### PUT
+### PUT Day 1 Black Diamond
 
 ####
 
@@ -465,7 +465,7 @@ app.put('/api/getProduct/:id', function(req, res) {
 ```
 
 
-### DELETE
+### DELETE  Day 1 Black Diamond
 
 ####
 
@@ -530,39 +530,7 @@ app.delete('/api/getProduct/:id', function(req,res) {
 ```
 
 
-## D3) Express-session, CORS
-
-### Install CORS
-
-####
-
-* Install CORS using npm
-* Require CORS in your server file
-* Apply CORS as middleware
-
-####
-
-* npm install --save cors this will add cors to your package.json file as a dependency
-* Use the require() syntax to require cors in your server
-* app.use()
-
-####
-
-Actual Code
-
-```
-// require cors so we can use it in our server
-
-var cors = require('cors');
-
-
-// middleware
-
-app.use(cors());
-
-
-```
-
+##  Express-session
 
 ### Install and configure Express Session
 
