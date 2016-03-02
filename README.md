@@ -147,7 +147,7 @@ Run npm install and bower install
 If Npm install or Bower install fails make sure you are in the right directory. Npm needs to have access to the package.json file and bower needs to have access to the bower.json file
 
 
-## D2) Importing 3rd Parties
+## D2)  Importing 3rd Partie
 
 ### Import Body parser
 
@@ -404,7 +404,7 @@ app.post('/api/getProductList', function(req, res) {
 * If the product is in the products array then update the id to the new id and respond with the result
 * If the product IS NOT in the array respond with with a message saying the item could not be found
 * Use postman for the PUT request
-<img src="http://i.imgur.com/J4e5FCl.png" width="100%" height="100%"></img>
+<img style="display:block; margin: 30px auto 0 auto; width: 80%;" src="http://i.imgur.com/J4e5FCl.png" width="100%" height="100%"></img>
 
 ####
 
@@ -475,7 +475,7 @@ app.put('/api/getProduct/:id', function(req, res) {
 * If the product is in the products array then delete the product and return the product you deleted
 * If the product IS NOT in the array respond with with a message saying the item could not be found
 * Use postman for the DELETE request
-<img src="http://i.imgur.com/YAMX51Q.png" width="100%" height="100%"></img>
+<img style="display:block; margin: 30px auto 0 auto; width: 80%;" src="http://i.imgur.com/YAMX51Q.png" width="100%" height="100%"></img>
 
 ####
 
