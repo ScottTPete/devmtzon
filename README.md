@@ -510,31 +510,3 @@ app.delete('/api/getProduct/:id', function(req,res) {
 
 
 ```
-
-
-###  Folder Structure
-####
-
-Folder structure is a huge part of keeping your code maintainable
-Create a folder for you server files. Common names for this folder are server or api
-
-### Code
-
-####
-
-* Create a new repository
-* Create the following files in this structure in your project folder
-
-```
-
-api/
-    controllers/
-        productController.js
-public/
-    (already included)
-
-package.json
-server.js
-
-
-```
