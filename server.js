@@ -1,6 +1,6 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
-     _ = require('lodash');
+     _ = require('lodash'),
     app = express(),
     port = 8080;
 
